@@ -1,12 +1,10 @@
 {
-  "name": "angular2-quickstart",
-  "version": "1.0.0",
+  "name": "angular2-withdep",
+  "version": "0.0.1",
   "scripts": {
-    "postinstall": " ./node_modules/.bin/typings install",
     "tsc": "tsc",
-    "tsc:w": "tsc -w",
     "http": "http-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run http\" "
+    "start": "concurrent \"npm run tsc\" \"npm run http\" "
   },
   "license": "ISC",
   "dependencies": {
@@ -26,7 +24,7 @@
   },
   "devDependencies": {
     "concurrently": "2.0.0",
-    "lite-server": "2.2.0",
+    "http-server": "0.8.5",
     "typescript": "1.8.10"
   }
 }
